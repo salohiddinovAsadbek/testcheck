@@ -1,0 +1,251 @@
+.loginPage {
+  display: flex;
+}
+
+.quote {
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+  background-image: url("./assets/quoteBack.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: calc(103 / 14.4 * 1vw);
+  width: calc(377 / 14.4 * 1vw);
+}
+
+.quote > div > img:first-child {
+  width: calc(30 / 14.4 * 1vw);
+  height: calc(30 / 14.4 * 1vw);
+  position: absolute;
+  top: calc(-80 / 14.4 * 1vw);
+}
+
+.quote > div > img:last-child {
+  position: absolute;
+  width: calc(42 / 14.4 * 1vw);
+  height: calc(37 / 14.4 * 1vw);
+  right: 0;
+  bottom: calc(-50 / 14.4 * 1vw);
+}
+
+.quote > div > p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: calc(22 / 14.4 * 1vw);
+  line-height: calc(38 / 14.4 * 1vw);
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.loginPageForm {
+  display: flex;
+  flex-direction: column;
+  padding: calc(72 / 14.4 * 1vw) 0 0 calc(89 / 14.4 * 1vw);
+}
+
+.loginPageFormInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: calc(80 / 14.4 * 1vw) 0 0 0;
+}
+
+.loginPageFormInfo > p:first-child {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: calc(30 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1935ca;
+}
+
+.loginPageFormInfo > p:nth-child(2) {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: calc(18 / 14.4 * 1vw);
+  line-height: calc(28 / 14.4 * 1vw);
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1935ca;
+  margin-top: calc(2 / 14.4 * 1vw);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: calc(21 / 14.4 * 1vw);
+  margin-top: calc(26 / 14.4 * 1vw);
+  margin-bottom: calc(37 / 14.4 * 1vw);
+}
+
+form > label {
+  display: flex;
+  flex-direction: column;
+  gap: calc(12 / 14.4 * 1vw);
+  position: relative;
+}
+
+form > label > p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: calc(16 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #696f79;
+}
+
+form > label > input {
+  width: calc(406 / 14.4 * 1vw);
+  height: calc(54 / 14.4 * 1vw);
+  padding-left: calc(34 / 14.4 * 1vw);
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1935ca;
+  border: none;
+  outline: none;
+  border-radius: calc(10 / 14.4 * 1vw);
+  box-shadow: 0px calc(15 / 14.4 * 1vw) calc(40 / 14.4 * 1vw)
+    calc(5 / 14.4 * 1vw) #ededed;
+  background-color: #ffffff;
+  padding-right: calc(90 / 14.4 * 1vw);
+}
+
+form > label > input::placeholder {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1935ca;
+}
+
+form > label > button {
+  position: absolute;
+  bottom: calc(20 / 14.4 * 1vw);
+  right: calc(35 / 14.4 * 1vw);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+form > div {
+  display: flex;
+  gap: calc(14 / 14.4 * 1vw);
+  align-items: center;
+  cursor: pointer;
+}
+
+form > div > p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: calc(16 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #696f79;
+}
+
+.loginSubmit {
+  height: calc(54 / 14.4 * 1vw);
+  background-color: #1935ca;
+  border: none;
+  border-radius: calc(10 / 14.4 * 1vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.loginSubmit > p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: calc(19 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.loginOr {
+  display: flex;
+  gap: calc(33 / 14.4 * 1vw);
+  align-items: center;
+  margin-top: calc(25 / 14.4 * 1vw);
+  margin-bottom: calc(25 / 14.4 * 1vw);
+}
+
+.loginOr > p {
+  width: calc(172 / 14.4 * 1vw);
+  height: calc(1 / 14.4 * 1vw);
+  background-color: #f5f5f5;
+}
+
+.loginWith {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: calc(10 / 14.4 * 1vw);
+  box-shadow: 0px calc(15 / 14.4 * 1vw) calc(40 / 14.4 * 1vw)
+    calc(5 / 14.4 * 1vw) #ededed;
+  height: calc(54 / 14.4 * 1vw);
+  cursor: pointer;
+}
+
+.loginWith > p {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: calc(19 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+}
+
+.loginForgot {
+  text-align: center;
+  margin-top: calc(33 / 14.4 * 1vw);
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: calc(20 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1565d8;
+  cursor: pointer;
+}
+
+.language {
+  position: fixed;
+  top: calc(50 / 14.4 * 1vw);
+  right: calc(50 / 14.4 * 1vw);
+}
+
+.language option {
+  font-size: calc(25 / 14.4 * 1vw);
+}
+
+.language select {
+  width: calc(50 / 14.4 * 1vw);
+  height: calc(30 / 14.4 * 1vw);
+  font-size: calc(25 / 14.4 * 1vw);
+}

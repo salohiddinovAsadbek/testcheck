@@ -1,0 +1,40 @@
+{
+  "en": {
+    "quote": "Those people who develop the ability to continuously acquire new and better forms of knowledge that they can apply to their work and to their lives will be the movers and shakers in our society for the indefinite future",
+    "quoteAuthor": "Brian Tracy",
+    "loginPage": {
+      "first": "Login to your Account",
+      "second": "with your registered Email Address",
+      "third": "Email address*",
+      "fourth": "Enter email address",
+      "fifth": "Enter password*",
+      "sixth": "Password",
+      "seventh": "Show",
+      "eighth": "Remember my password",
+      "ninth": "Login",
+      "tenth": "Login with Company Account",
+      "eleventh": "Forgot Password?",
+      "or": "or",
+      "hide": "Hide"
+    }
+  },
+  "uz": {
+    "quote": "Doimiy ravishda yangi va yaxshiroq bilim shakllarini egallash qobiliyatini rivojlantiradigan odamlar, ularni ishlarida va hayotlarida qo‘llay oladiganlar, kelajakda jamiyatimizda harakatlantiruvchi va o‘zgaruvchilar bo‘lishadi",
+    "quoteAuthor": "Brian Tracy",
+    "loginPage": {
+      "first": "Hisobingizga kiring",
+      "second": "Ro‘yxatdan o‘tgan Email manzilingiz bilan",
+      "third": "Email manzil*",
+      "fourth": "Email manzilni kiriting",
+      "fifth": "Parolni kiriting*",
+      "sixth": "Parol",
+      "seventh": "Ko‘rsat",
+      "eighth": "Parolni eslab qolish",
+      "ninth": "Kirish",
+      "tenth": "Kompaniya hisob bilan kirish",
+      "eleventh": "Parolni unutdingizmi?",
+      "or": "yoki",
+      "hide": "Yashirish"
+    }
+  }
+}
