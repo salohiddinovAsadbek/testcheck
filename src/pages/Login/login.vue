@@ -118,14 +118,26 @@ export default {
             user.useremail === this.userInfo.useremail &&
             user.userpassword === this.userInfo.userpassword
           ) {
-            console.log("succes");
+            localStorage.setItem("user", JSON.stringify(this.userInfo));
             this.$router.push("/home");
+
+            return;
           }
+        });
+
+        toast("Incorrect password or email", {
+          type: "error",
+          dangerouslyHTMLString: true,
         });
       }
 
       if (!this.checkValidity()) {
         if (this.userInfo.useremail === "") {
+          toast("Please write email", {
+            type: "warning",
+            dangerouslyHTMLString: true,
+          });
+        } else if (!this.userInfo.useremail.includes("@")) {
           toast("Please write email", {
             type: "warning",
             dangerouslyHTMLString: true,

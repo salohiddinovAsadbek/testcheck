@@ -16,6 +16,13 @@
       "eleventh": "Forgot Password?",
       "or": "or",
       "hide": "Hide"
+    },
+    "homePage": {
+      "dashboard": "Dashboard",
+      "support": "Support 24/7",
+      "contact": "Contacts us anytime",
+      "start": "Start",
+      "logout": "Log out"
     }
   },
   "uz": {

@@ -5,5 +5,6 @@ import router from "./router";
 import { i18n } from "./lang/lang";
 import "./pages/Login/login.css";
 import "vue3-toastify/dist/index.css";
+import "./components/navigation/navigation.css";
 
 createApp(App).use(router).use(i18n).mount("#app");
