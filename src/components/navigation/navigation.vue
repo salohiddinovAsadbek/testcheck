@@ -1,7 +1,7 @@
 <template>
   <div class="navigation">
     <router-link>
-      <img :src="mainLogo" alt="mainLogo" />
+      <img :src="mainLogo1" alt="mainLogo" />
     </router-link>
     <div class="navigationWrapper">
       <button>
@@ -24,7 +24,7 @@
 </template>
 <script>
 import dashboard from "./assets/dashboard.svg";
-import mainLogo from "./assets/mainLogo.svg";
+import mainLogo1 from "./assets/mainLogo.svg";
 import logout from "./assets/logout.svg";
 import support1 from "./assets/support1.svg";
 import support2 from "./assets/support1.svg";
@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       dashboard,
-      mainLogo,
+      mainLogo1,
       logout,
       support1,
       support2,
