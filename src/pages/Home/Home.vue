@@ -2,16 +2,20 @@
   <div class="home">
     <router-view></router-view>
     <Navigation />
-    <button @click="startVoice">Start</button>
+    <!-- <button @click="startVoice">Start</button>
     <button @click="stopVoice">Stop</button>
-    <button @click="downloadAudio" v-if="audioUrl">Send</button>
+    <button @click="downloadAudio" v-if="audioUrl">Send</button> -->
+
+    <Writing />
   </div>
 </template>
 <script>
 import Navigation from "../../components/navigation/navigation.vue";
+import Writing from "../../components/writing/writing.vue";
 export default {
   components: {
     Navigation,
+    Writing,
   },
   data() {
     return {
@@ -74,4 +78,8 @@ export default {
   },
 };
 </script>
-<style></style>
+<style scoped>
+.home {
+  display: flex;
+}
+</style>
