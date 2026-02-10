@@ -4,7 +4,7 @@
     <Navigation />
     <button @click="startVoice">Start</button>
     <button @click="stopVoice">Stop</button>
-    <button @click="sendVoice">Send</button>
+    <button @click="downloadAudio" v-if="audioUrl">Send</button>
   </div>
 </template>
 <script>
@@ -18,6 +18,7 @@ export default {
       mediaRecorder: null,
       audioChunks: [],
       audioUrl: null,
+      stream: null, // qo'shamiz
     };
   },
   mounted() {
@@ -34,6 +35,8 @@ export default {
         audio: true,
       });
 
+      this.stream = stream; // stream ni saqlab qo'yamiz
+
       this.mediaRecorder = new MediaRecorder(stream);
 
       this.mediaRecorder.ondataavailable = (event) => {
@@ -44,40 +47,29 @@ export default {
         const audioBlob = new Blob(this.audioChunks, { type: "audio/webm" });
         this.audioUrl = URL.createObjectURL(audioBlob);
         this.audioChunks = [];
+
+        // Stream trackларini to'xtatamiz
+        this.stream.getTracks().forEach((track) => track.stop());
       };
 
       this.mediaRecorder.start();
     },
 
     stopVoice() {
-      if (this.mediaRecorder) {
+      if (this.mediaRecorder && this.mediaRecorder.state !== "inactive") {
         this.mediaRecorder.stop();
       }
     },
 
-    sendVoice() {
-      const axios = require("axios");
-      const fs = require("fs");
-      const FormData = require("form-data");
-
-      const token = "";
-      const chatId = "";
-
-      async function sendVoice() {
-        const form = new FormData();
-        form.append("chat_id", chatId);
-        form.append("voice", fs.createReadStream("./voice.ogg")); // your voice file
-
-        await axios.post(
-          `https://api.telegram.org/bot${token}/sendVoice`,
-          form,
-          { headers: form.getHeaders() },
-        );
-
-        console.log("Voice sent ✅");
+    downloadAudio() {
+      if (this.audioUrl) {
+        const a = document.createElement("a");
+        a.href = this.audioUrl;
+        a.download = `recording-${Date.now()}.webm`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
       }
-
-      sendVoice();
     },
   },
 };
